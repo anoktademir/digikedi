@@ -346,8 +346,29 @@ h3 { font-size: clamp(24px, 3vw, 36px); }
   .marquee-track, .hero-spin { animation: none !important; }
 }
 
+/* ---------- Portfolio preview (home & hizmetler) ---------- */
+.port-prev-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.port-prev-card {
+  border-radius: var(--r-lg); overflow: hidden; border: 1px solid var(--line);
+  background: var(--bg-2); position: relative; aspect-ratio: 4/3;
+  transition: transform .5s var(--ease), box-shadow .5s var(--ease);
+  display: block;
+}
+.port-prev-card:hover { transform: translateY(-6px); box-shadow: 0 28px 56px -28px rgba(12,20,15,.25); border-color: var(--line-strong); }
+.port-prev-card img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s var(--ease); }
+.port-prev-card:hover img { transform: scale(1.05); }
+.port-prev-info {
+  position: absolute; bottom: 0; left: 0; right: 0;
+  padding: 22px 24px;
+  background: linear-gradient(to top, rgba(12,20,15,.72) 0%, transparent 100%);
+  color: #fff;
+}
+.port-prev-info span { font-size: 11.5px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; opacity: .75; display: block; margin-bottom: 5px; }
+.port-prev-info strong { font-family: var(--display); font-size: 22px; display: block; line-height: 1.1; }
+
 /* ---------- Responsive ---------- */
 @media (max-width: 940px) {
+  .port-prev-grid { grid-template-columns: repeat(2, 1fr); }
   .hero-grid { grid-template-columns: 1fr; }
   .hero-visual { max-width: 460px; }
   .svc-grid { grid-template-columns: 1fr; }
@@ -371,4 +392,5 @@ h3 { font-size: clamp(24px, 3vw, 36px); }
   .foot-top { grid-template-columns: 1fr; }
   .hero-badges { gap: 22px; }
   .head-row { flex-direction: column; align-items: flex-start; }
+  .port-prev-grid { grid-template-columns: 1fr; }
 }
