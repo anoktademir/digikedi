@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Madame La Presidente — Portfolyo | Digikedi</title>
+<meta name="description" content="Fransa merkezli Madame La Presidente markası için hazırlanan web sitesi tasarımı. Markanın karakterini yansıtan özgün bir dijital deneyim." />
+<link rel="canonical" href="https://digikedi.vercel.app/madamelapresidente.html" />
+<link rel="icon" href="favicon.png" type="image/png" />
+<link rel="apple-touch-icon" href="favicon.png" />
+<meta name="robots" content="index, follow" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Digikedi" />
+<meta property="og:title" content="Madame La Presidente — Portfolyo | Digikedi" />
+<meta property="og:description" content="Fransa merkezli Madame La Presidente markası için hazırlanan web sitesi tasarımı. Markanın karakterini yansıtan özgün bir dijital deneyim." />
+<meta property="og:url" content="https://digikedi.vercel.app/madamelapresidente.html" />
+<meta property="og:image" content="https://digikedi.vercel.app/portfolio-images/madamelapresidente/cover.jpg" />
+<meta property="og:locale" content="tr_TR" />
+<link rel="stylesheet" href="assets/styles.css" />
+<style>
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+.gallery-item {
+  border-radius: var(--r-md);
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: var(--bg-2);
+  position: relative;
+}
+.gallery-item img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform .55s var(--ease);
+}
+.gallery-item:hover img { transform: scale(1.03); }
+.gallery-item.wide { grid-column: span 2; }
+
+.proj-nav { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding-top: 52px; margin-top: 52px; border-top: 1px solid var(--line); }
+.proj-nav-link { display: flex; flex-direction: column; gap: 4px; text-decoration: none; }
+.proj-nav-link .pnl { font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); display: flex; align-items: center; gap: 6px; }
+.proj-nav-link strong { font-family: var(--display); font-size: 24px; color: var(--ink); transition: color .25s; display: block; margin-top: 4px; }
+.proj-nav-link:hover strong { color: var(--mint-deep); }
+.proj-nav-link.next { text-align: right; }
+.proj-nav-link.next .pnl { justify-content: flex-end; }
+
+.proj-meta { display: flex; gap: 36px; flex-wrap: wrap; margin-top: 32px; padding-top: 28px; border-top: 1px solid var(--line); }
+.proj-meta-item dt { font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-3); margin-bottom: 4px; }
+.proj-meta-item dd { font-size: 16px; color: var(--ink); font-weight: 500; }
+.proj-meta-item dd a { color: var(--mint-deep); text-decoration: underline; text-underline-offset: 3px; }
+
+@media (max-width: 700px) {
+  .gallery-grid { grid-template-columns: 1fr; }
+  .gallery-item.wide { grid-column: span 1; }
+  .proj-nav { flex-direction: column; }
+  .proj-nav-link.next { text-align: left; }
+  .proj-nav-link.next .pnl { justify-content: flex-start; }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="index.html" aria-label="Digikedi">
+      <img src="logo-digikedi.png" alt="Digikedi" height="36" style="display:block;" />
+    </a>
+    <nav class="nav-links">
+      <a href="index.html" data-en="Home">Ana Sayfa</a>
+      <a href="hizmetler.html" data-en="Services">Hizmetler</a>
+      <a href="portfolio.html" class="active" data-en="Portfolio">Portfolyo</a>
+      <a href="hakkimizda.html" data-en="About">Hakkımızda</a>
+      <a href="iletisim.html" data-en="Contact">İletişim</a>
+    </nav>
+    <div class="nav-right">
+      <div class="lang-toggle" role="group" aria-label="Dil">
+        <button data-lang="tr" class="on">TR</button>
+        <button data-lang="en">EN</button>
+      </div>
+      <a href="iletisim.html" class="btn btn--mint" data-en="Get a quote">Teklif Al
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <button class="nav-toggle" aria-label="Menü"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="page-hero">
+  <div class="wrap">
+    <p class="breadcrumb reveal">
+      <a href="index.html" data-en="Home">Ana Sayfa</a> &nbsp;/&nbsp;
+      <a href="portfolio.html" data-en="Portfolio">Portfolyo</a> &nbsp;/&nbsp;
+      <span>Madame La Presidente</span>
+    </p>
+    <span class="eyebrow reveal" data-d="1" data-en="Web Design">Web Tasarımı</span>
+    <h1 class="reveal" data-d="1">Madame La Presidente</h1>
+    <p class="lead reveal" data-d="2" data-en="Website design for France-based Madame La Presidente brand. A unique digital experience reflecting the brand's character.">Fransa merkezli Madame La Presidente markası için hazırlanan web sitesi tasarımı. Markanın karakterini yansıtan özgün bir dijital deneyim.</p>
+    <div class="proj-meta reveal" data-d="3">
+      <dl class="proj-meta-item">
+        <dt data-en="Category">Kategori</dt>
+        <dd data-en="Web Design">Web Tasarımı</dd>
+      </dl>
+      <dl class="proj-meta-item">
+        <dt data-en="Tags">Etiketler</dt>
+        <dd>Web Tasarımı, UI/UX, Fransa</dd>
+      </dl>
+      <dl class="proj-meta-item"><dt data-en="Website">Web Sitesi</dt><dd><a href="https://madamelapresidente.fr" target="_blank" rel="noopener">madamelapresidente.fr</a></dd></dl>
+    </div>
+    <div class="hero-cta reveal" data-d="3" style="margin-top:24px;">
+      <a href="iletisim.html" class="btn btn--mint" data-en="Start a project">Benzer Proje Başlat
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+          <a href="https://madamelapresidente.fr" target="_blank" rel="noopener" class="btn btn--ghost" style="margin-top:8px;">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            madamelapresidente.fr
+          </a>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:clamp(16px,3vw,32px);">
+  <div class="wrap">
+    <div class="gallery-grid">
+      <div class="gallery-item wide reveal"><img src="portfolio-images/madamelapresidente/cover.jpg" alt="" loading="lazy" /></div>
+      <div class="gallery-item reveal"><img src="portfolio-images/madamelapresidente/1.gif" alt="" loading="lazy" /></div>
+      <div class="gallery-item reveal"><img src="portfolio-images/madamelapresidente/2.gif" alt="" loading="lazy" /></div>
+    </div>
+
+    <div class="proj-nav">
+      <a href="cuisine.html" class="proj-nav-link prev">
+          <span class="pnl"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M19 12H5M12 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Önceki Proje</span>
+          <strong>Cuisine Elite</strong>
+        </a>
+      <a href="me-93.html" class="proj-nav-link next">
+          <span class="pnl">Sonraki Proje <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <strong>Me.93</strong>
+        </a>
+    </div>
+  </div>
+</section>
+
+<section style="padding-bottom:clamp(60px,8vw,100px);">
+  <div class="wrap">
+    <div class="cta-band reveal">
+      <h2 data-en="Ready to exist in this digital world?">Senin projen de burada olsun.</h2>
+      <p class="lead" data-en="Share the details of your project. We'll research, analyse and come back with the best solution for you.">
+        Projenin detaylarını paylaş. Senin için araştırıp analiz edelim ve en iyi çözümle geri dönelim.
+      </p>
+      <div class="hero-cta" style="margin-top:32px;">
+        <a href="iletisim.html" class="btn" data-en="Get a quote now">Hemen Teklif Al
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <a class="brand" href="index.html">
+          <img src="cropped-logo_1.png" alt="Digikedi" height="36" style="display:block;" />
+        </a>
+        <p data-en="Digital Idea &amp; Design Production Factory. We grow brands in the digital world with creativity and technology.">Dijital Fikir ve Tasarım Üretim Fabrikası. Yaratıcılık ve teknolojiyle markaları dijitalde büyütüyoruz.</p>
+      </div>
+      <div class="foot-col">
+        <h4 data-en="Services">Hizmetler</h4>
+        <a href="hizmetler.html#reklam" data-en="Ad Management">Reklam Yönetimi</a>
+        <a href="hizmetler.html#web" data-en="Web Development">Web Geliştirme</a>
+        <a href="hizmetler.html#yapay-zeka" data-en="AI Solutions">Yapay Zeka</a>
+        <a href="hizmetler.html#video" data-en="Video Production">Video Prodüksiyon</a>
+      </div>
+      <div class="foot-col">
+        <h4 data-en="Company">Kurumsal</h4>
+        <a href="hakkimizda.html" data-en="About">Hakkımızda</a>
+        <a href="portfolio.html" data-en="Portfolio">Portfolyo</a>
+        <a href="hizmetler.html" data-en="Services">Hizmetler</a>
+        <a href="iletisim.html" data-en="Contact">İletişim</a>
+      </div>
+      <div class="foot-col">
+        <h4 data-en="Address">Adres</h4>
+        <p>Mansuroğlu Mah. 286/3 Sok. No:14/B Bayraklı / İZMİR</p>
+        <div class="socials">
+          <a href="https://www.instagram.com/digikedi/" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></a>
+          <a href="https://twitter.com/digikedi" aria-label="X"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.3 8.3L23.2 22h-6.6l-5.2-6.8L5.5 22H2.3l7.8-8.9L1.2 2h6.8l4.7 6.2L18.9 2zm-2.3 18h1.8L7.5 3.9H5.6L16.6 20z"/></svg></a>
+          <a href="https://www.facebook.com/digikedi/" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M14 8.5V6.8c0-.8.5-1 .9-1H17V2.5h-2.6C11.5 2.5 11 4.7 11 6.2v2.3H9v3h2V22h3v-10.5h2.3l.4-3H14z" fill="currentColor"/></svg></a>
+          <a href="https://tr.linkedin.com/company/digikedi" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.8"/><path d="M7 10v7M7 7v.01M11 17v-4a2 2 0 0 1 4 0v4M11 17v-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Digikedi. <span data-en="All rights reserved.">Tüm hakları saklıdır.</span></span>
+      <div class="links">
+        <a href="cerez-politikasi.html" data-en="Cookie Policy">Çerez Politikası</a>
+        <a href="gizlilik-politikasi.html" data-en="Privacy Policy">Gizlilik Politikası</a>
+        <a href="kullanim-kosullari.html" data-en="Terms of Use">Kullanım Koşulları</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/site.js"></script>
+</body>
+</html>
